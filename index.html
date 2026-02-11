@@ -7,7 +7,26 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-<header class="hero">
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html">Joe Serrano</a>
+        <input class="nav__toggle" type="checkbox" id="nav-toggle" />
+        <label class="nav__toggle-label" for="nav-toggle" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <nav class="nav__links">
+          <a href="index.html" class="nav__link">Inicio</a>
+          <a href="ingles-academico.html" class="nav__link">Inglés académico</a>
+          <a href="ingles-ejecutivos.html" class="nav__link">Inglés para ejecutivos</a>
+          <a href="biografia.html" class="nav__link">Biografía</a>
+          <a href="#contacto" class="nav__link nav__cta">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <header class="hero">
       <div class="hero__bg"></div>
       <div class="container">
         <div class="hero__grid">
@@ -15,11 +34,11 @@
             <p class="eyebrow">Servicios Profesionales de Idiomas y Comunicación Intercultural</p>
             <h1>Joe Serrano</h1>
             <p class="lead">
-              Conectando el lenguaje y la cultura para el éxito global.
+              Inglés profesional, interpretación y comunicación intercultural para
+              líderes y equipos globales.
             </p>
             <div class="cta-row">
-              <a class="btn btn--primary" href="#contacto">Agenda una sesión gratis</a>
-              <a class="btn btn--ghost" href="#servicios">Ver servicios</a>
+              <a class="btn btn--primary" href="#contacto">Agenda tu sesión de diagnóstico GRATIS</a>
             </div>
             <div class="meta">
               <span>Coach de inglés, interpretación y comunicación intercultural</span>
@@ -28,12 +47,12 @@
           </div>
           <div class="hero__card">
             <div class="card">
-              <h2>Servicios principales</h2>
+              <h2>Servicios clave</h2>
               <ul class="list">
                 <li>Interpretación profesional in situ y por videoconferencia.</li>
                 <li>Traducción técnica y documental para industrias clave.</li>
                 <li>Coaching lingüístico alineado al MCER (Cambridge).</li>
-                <li>Coaching en comunicación intercultural para equipos globales.</li>
+                <li>Comunicación intercultural para equipos globales.</li>
               </ul>
             </div>
           </div>
@@ -87,98 +106,35 @@
         </div>
       </section>
 
-      <section class="section section--alt">
-        <div class="container">
-          <div class="section__header">
-            <h2>Especialización por industria</h2>
-            <p>Vocabulario y escenarios reales aplicados a cada sector.</p>
-          </div>
-          <div class="tag-grid">
-            <span>Finanzas y bancos</span>
-            <span>Automotriz</span>
-            <span>Aeroespacial</span>
-            <span>Recursos humanos</span>
-            <span>Logística</span>
-            <span>Educación</span>
-            <span>Derecho</span>
-            <span>IT y software</span>
-            <span>Periodismo y medios de comunicación</span>
-            <span>Mercadotecnia y ventas</span>
-            <span>Bienestar y deportes</span>
-            <span>Nutrición y salud</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <div class="section__header">
-            <h2>Metodología</h2>
-            <p>Enfoque práctico y medible, con herramientas actuales.</p>
-          </div>
-          <div class="feature-grid">
-            <div class="feature">
-              <h3>Enfoque comunicativo</h3>
-              <p>Basado en tareas (ABT) y escenarios reales de la industria.</p>
-            </div>
-            <div class="feature">
-              <h3>Marco internacional</h3>
-              <p>Alineado al MCER Cambridge A1 a C1.</p>
-            </div>
-            <div class="feature">
-              <h3>Personalización</h3>
-              <p>Planes de aprendizaje diseñados para cada necesidad.</p>
-            </div>
-            <div class="feature">
-              <h3>Herramientas modernas</h3>
-              <p>Uso de multimedia y recursos de vanguardia.</p>
-            </div>
-            <div class="feature">
-              <h3>Seguimiento</h3>
-              <p>Retroalimentación continua y reportes de avance.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section--accent">
-        <div class="container">
-          <div class="section__header">
-            <h2>Beneficios</h2>
-            <p>Confianza, resultados y acompañamiento profesional.</p>
-          </div>
-          <div class="benefits">
-            <div class="benefit">
-              <h3>Trayectoria comprobada</h3>
-              <p>Clientes internacionales y resultados sostenidos.</p>
-            </div>
-            <div class="benefit">
-              <h3>Coaching 1:1 o grupos</h3>
-              <p>Modelos flexibles para empresas o personas.</p>
-            </div>
-            <div class="benefit">
-              <h3>Adaptabilidad cultural</h3>
-              <p>Experiencia profunda en cultura mexicana y negocios globales.</p>
-            </div>
-            <div class="benefit">
-              <h3>Educación bilingüe</h3>
-              <p>Especialista en aprendizaje de alto impacto.</p>
-            </div>
-          </div>
-          <div class="stat">
+      <section class="section section--alt" id="lideres">
+        <div class="container split">
+          <div class="split__content">
+            <p class="eyebrow eyebrow--dark">Programa destacado</p>
+            <h2>Inglés para líderes</h2>
             <p>
-              <strong>32 años</strong> ayudando a alumnos a obtener certificados
-              B2 o C1 y a pasar exámenes finales.
+              Comunicación estratégica para dirigir reuniones, negociar y tomar
+              decisiones con seguridad frente a equipos internacionales.
             </p>
-            <p>
-              Equipos de empresas nacionales ya hablan inglés con fluidez. Con
-              conocimiento cultural sólido, compañías extranjeras han tenido
-              transiciones más productivas al establecerse en México.
-            </p>
-            <p>
-              Apoyo a ex-pats y sus familias para integrarse en distintas
-              regiones del país.
-            </p>
+            <ul class="list">
+              <li>Presentaciones ejecutivas y comunicación de alto impacto.</li>
+              <li>Inglés para liderazgo, influencia y manejo de conflictos.</li>
+              <li>Vocabulario especializado por industria y rol.</li>
+            </ul>
+            <a class="btn btn--primary btn--spaced" href="ingles-ejecutivos.html">Ver programa</a>
+          </div>
+          <div class="split__card">
+            <div class="card card--highlight">
+              <h3>Resultados esperados</h3>
+              <p>
+                Mayor claridad al hablar, control del mensaje y presencia
+                profesional en contextos multinacionales.
+              </p>
+              <div class="pill-row">
+                <span class="pill">Diagnóstico inicial</span>
+                <span class="pill">Plan personalizado</span>
+                <span class="pill">Seguimiento continuo</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
