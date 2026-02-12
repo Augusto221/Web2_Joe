@@ -209,5 +209,19 @@
         <p>Interpretación · Traducción · Coaching Lingüístico · Comunicación Intercultural</p>
       </div>
     </footer>
+    <script>
+      const navToggle = document.getElementById("nav-toggle");
+      document.addEventListener("click", (event) => {
+        const nav = document.querySelector(".nav");
+        if (!nav.contains(event.target)) {
+          navToggle.checked = false;
+        }
+      });
+      document.querySelectorAll(".nav__link").forEach((link) => {
+        link.addEventListener("click", () => {
+          navToggle.checked = false;
+        });
+      });
+    </script>
   </body>
 </html>
