@@ -60,6 +60,12 @@ a {
   color: var(--text);
 }
 
+.brand--logo img {
+  height: 75px;
+  width: auto;
+  display: block;
+}
+
 .nav__links {
   display: flex;
   gap: 1.2rem;
@@ -160,8 +166,12 @@ p {
 
 .hero {
   position: relative;
-  padding: 5rem 0 4rem;
+  padding: 7rem 0 4rem;
   overflow: hidden;
+}
+
+.site-header + .hero {
+  padding-top: 2.5rem;
 }
 
 .hero__bg {

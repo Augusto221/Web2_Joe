@@ -1,0 +1,48 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="800"
+  height="300"
+  viewBox="0 0 800 300"
+  role="img"
+  aria-label="Language Solutions logo">
+
+  <!-- ICONO ABSTRACTO (COMUNICACIÓN / IDIOMA) -->
+  <g transform="translate(40,75)">
+    <!-- forma azul -->
+    <polygon
+      points="0,40 90,0 110,20 20,60"
+      fill="#0A2D5E" />
+    <!-- forma blanca -->
+    <polygon
+      points="20,65 110,25 130,45 40,85"
+      fill="#FFFFFF" />
+    <!-- forma roja -->
+    <polygon
+      points="40,90 130,50 150,70 60,110"
+      fill="#C1121F" />
+  </g>
+
+  <!-- TEXTO -->
+  <text
+    x="220"
+    y="145"
+    font-family="Inter, Helvetica, Arial, sans-serif"
+    font-size="80"
+    font-weight="700"
+    fill="#0A2D5E"
+    letter-spacing="1">
+    Language
+  </text>
+
+  <text
+    x="220"
+    y="210"
+    font-family="Inter, Helvetica, Arial, sans-serif"
+    font-size="56"
+    font-weight="500"
+    fill="#C1121F"
+    letter-spacing="0.5">
+    Solutions
+  </text>
+
+</svg>
