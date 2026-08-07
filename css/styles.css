@@ -268,8 +268,16 @@ p {
   border-color: var(--accent);
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus-visible {
   transform: translateY(-2px);
+}
+
+.btn:focus-visible,
+.aeroenglish__logo-link:focus-visible,
+.footer__platform a:focus-visible {
+  outline: 3px solid #1e9bff;
+  outline-offset: 4px;
 }
 
 .btn--spaced {
@@ -309,6 +317,64 @@ p {
 
 .section--accent {
   background: #f2f5fb;
+}
+
+.aeroenglish {
+  background:
+    radial-gradient(circle at 8% 50%, rgba(30, 155, 255, 0.12), transparent 25%),
+    linear-gradient(135deg, #f4f8fd 0%, #e9f1fb 100%);
+  border-top: 1px solid rgba(11, 58, 110, 0.12);
+  border-bottom: 1px solid rgba(11, 58, 110, 0.12);
+}
+
+.aeroenglish__grid {
+  display: grid;
+  gap: clamp(2rem, 5vw, 5rem);
+  grid-template-columns: minmax(260px, 0.9fr) minmax(280px, 1.1fr);
+  align-items: center;
+}
+
+.aeroenglish__logo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 190px;
+  padding: 1rem;
+  border-radius: 24px;
+  text-decoration: none;
+}
+
+.aeroenglish__logo {
+  display: block;
+  width: min(100%, 520px);
+  height: auto;
+  max-height: 250px;
+  object-fit: contain;
+}
+
+.aeroenglish__content {
+  max-width: 42rem;
+}
+
+.aeroenglish__content h2 {
+  color: var(--bg-accent);
+}
+
+.aeroenglish__content p:not(.eyebrow) {
+  max-width: 38rem;
+  font-size: 1.08rem;
+}
+
+.btn--aero {
+  background: #0b3a6e;
+  color: #fff;
+  box-shadow: 0 15px 35px rgba(11, 58, 110, 0.25);
+}
+
+.btn--aero:hover,
+.btn--aero:focus-visible {
+  background: #087fd1;
+  box-shadow: 0 15px 35px rgba(8, 127, 209, 0.3);
 }
 
 .page-hero {
@@ -666,6 +732,20 @@ p {
   color: #cdd5d6;
 }
 
+.footer__platform {
+  font-size: 0.82rem;
+  opacity: 0.82;
+}
+
+.footer__platform a {
+  color: #7fc8ff;
+  text-underline-offset: 0.2em;
+}
+
+.footer__platform a:hover {
+  color: #fff;
+}
+
 @media (max-width: 600px) {
   .nav__toggle-label {
     display: inline-flex;
@@ -693,5 +773,19 @@ p {
 
   .page-hero__image img {
     height: auto;
+  }
+
+  .aeroenglish__grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .aeroenglish__logo-link {
+    min-height: 0;
+    padding: 0;
+  }
+
+  .aeroenglish__logo {
+    max-height: 190px;
   }
 }
