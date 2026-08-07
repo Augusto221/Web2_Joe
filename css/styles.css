@@ -733,8 +733,8 @@ p {
 }
 
 .footer__platform {
-  font-size: 0.82rem;
-  opacity: 0.82;
+  font-size: inherit;
+  opacity: 1;
 }
 
 .footer__platform a {
