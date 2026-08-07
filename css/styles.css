@@ -325,6 +325,7 @@ p {
     linear-gradient(135deg, #f4f8fd 0%, #e9f1fb 100%);
   border-top: 1px solid rgba(11, 58, 110, 0.12);
   border-bottom: 1px solid rgba(11, 58, 110, 0.12);
+  overflow: hidden;
 }
 
 .aeroenglish__grid {
@@ -350,6 +351,7 @@ p {
   height: auto;
   max-height: 250px;
   object-fit: contain;
+  transform: scale(2);
 }
 
 .aeroenglish__content {
